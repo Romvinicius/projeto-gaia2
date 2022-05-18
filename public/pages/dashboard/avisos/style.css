@@ -1,0 +1,57 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.content .form-aviso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .form-aviso .input-titulo {
+  margin-bottom: 20px;
+}
+
+.content .form-aviso label {
+  display: block;
+}
+
+.content .form-aviso input, textarea {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.content .form-aviso input {
+  height: 30px;
+}
+
+.content .form-aviso textarea {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.form-aviso {
+  background: white;
+  width: max-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.container-mural-avisos .feed-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.feed-list {
+  max-width: 400px;
+}

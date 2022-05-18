@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  padding: 30px;
+  margin: 60px auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #002b2b;
+  padding: 3px;
+  font-size: 18px;
+  outline: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#resultado_simulador {
+  text-align: center;
+}
+
+.valores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 10em;
+}
+
+#resultado_simulador .ganho-conosco p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #002b2b;
+}
+
+#resultado_simulador .ganho-conosco h2 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #002b2b;
+}
+
+.valores {
+  margin-top: 2rem;
+  height: 30vh;
+}
+
+.valores p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.valores h3 {
+  font-size: 32px;
+}
+
+.valores .perdas,
+.perdas h3 {
+  color: #ff0000;
+}
+
+.valores .ganhos,
+.ganhos h3 {
+  color: #004466;
+}
+
+.valores .valorLiquidoPerda,
+.valorLiquidoPerda h3 {
+  color: #ffd700;
+}

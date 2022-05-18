@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../globais.css">
+
+    <script src="../../../js/funcoes.js"></script>
+    <script src="./registro.js"></script>
+
+</head>
+
+<body onload="atualizarFeedCadastro(), validarSessao()">
+    <div class="container">
+        <div class="wrapper">
+            <div class="welcome">
+                <div>
+                    Ola, <b id="name_user">Agricultor</b>
+                    <p>Bem-vindo(a) a sua sessão de Registro de funcionários</p>
+                </div>
+                <div class="return-dashboard">
+                    <a href="../dashboard.html">Voltar para o Dashboard</a>
+                </div>
+            </div>
+
+            <section class="form-main">
+                <div class="container">
+                    <div class="main-formulario-cadastro">
+                        <div class="textos">
+                            <h1>GAIA - Registro</h1>
+                            <p>Insira os dados do seu funcionário.</p>
+                        </div>
+                        <div>
+                            <div class="campos-conjunto-1">
+                                <div class="campos-total">
+                                    <span>Nome:</span>
+                                    <input id="input_nome" placeholder="Insira o Primeiro Nome" />
+                                </div>
+                                <div class="campos-total">
+                                    <span>E-mail:</span>
+                                    <input id="input_email" onblur="validarEmail()" />
+                                    <span id="span_error_email"></span>
+                                </div>
+                                <div class="campos-total">
+                                    <span>Plantação:</span>
+                                    <select id="cad" >
+                                        <option value="0">ESCOLHA</option>
+                                      </select>
+                                <span id="span_error_cargo"></span>
+                                </div>
+                                <div class="campos-total">
+                                    <span>Cargo:</span>
+                                    <input id="input_cargo">
+                                <span id="span_error_cargo"></span>
+                                </div>
+                            </div>
+
+                            <div class="campos-conjunto-2">
+                                <div class="campos-metade">
+                                    <span id="span_senha">Senha:</span>
+                                    <input id="input_senha" onblur="validarSenha()" />
+                                    <span id="span_error_senha"></span>
+                                </div>
+                                <div class="campos-metade">
+                                    <span id="span_confirmarSenha">Confirmar Senha:</span>
+                                    <input id="input_confirmarSenha" onblur="validarSenha()" />
+                                    <span id="span_error_confirmarSenha"></span>
+                                </div>
+                            </div>
+                            <div class="button_form">
+                                <button id="btnCadastro" class="btn-green form"
+                                onclick="cadastrarFuncionario()">Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+</body>
+
+</html>

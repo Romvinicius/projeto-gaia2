@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../globais.css" />
+    <script src="//code.jivosite.com/widget/Rb50co3NOV" async></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home | Login</title>
+  </head>
+
+  <body>
+    <header id="header" class="nav-second">
+      <div class="wrapper">
+        <div class="container-header">
+          <a href="../../index.html"
+            ><img class="logo" src="../../assets/icons/gaia_logo.png" alt=""
+          /></a>
+          <ul class="nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sobre/about.html">Sobre</a></li>
+            <li><a href="../calculadora/calculadora.html">Simulador</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+          </ul>
+          <div class="box-a">
+            <button class="btn btn-green">Entrar</button>
+            <a class="btn btn-light" href="../cadastro/cadastro.html"
+              >Cadastre-se</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-formulario">
+      <div class="wrapper">
+        <div class="container">
+          <div class="card-formulario">
+            <div class="titulo-login">
+              <h1>GAIA - Login Proprietário</h1>
+              <p>Entre com seus dados</p>
+            </div>
+            <div class="form">
+              <span id="span_email"></span>
+              <div class="input_box">
+                Email:<input
+                  type="text"
+                  placeholder="xxxxxxxxxxx@xxxxxxxxxxx"
+                  id="input_email"
+                />
+              </div>
+              <div class="input_box">
+                Senha:
+                <input
+                  type="password"
+                  placeholder="*************"
+                  id="input_senha"
+                />
+              </div>
+              <button
+                class="btn btn-green"
+                id="button_entrar_dashboard"
+                onclick="entrar()"
+              >
+                Entrar
+              </button>
+              <div>
+                Não tem uma conta ?<span
+                  ><a href="../cadastro/cadastro.html" id="crie_conta">
+                    Crie uma Conta</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="direita">
+            <div class="form-img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-main">
+      <div class="wrapper">
+        <div class="container-footer">
+          <div class="content-main">
+            <div class="itens-left">
+              <h1>GAIA</h1>
+              <p>+55 (11)94002-8922</p>
+              <p>projetogaiaoficial@gmail.com</p>
+            </div>
+            <div class="itens-main">
+              <h1>Links</h1>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../sobre/about.html">Sobre</a></li>
+                <li><a href="../calculadora/calculadora.html">Simulador</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="itens-right">
+              <h1>Endereço</h1>
+              <p>
+                Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP,
+                01414-001
+              </p>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="itens-left">
+              <img src="../../assets/icons/Linkedin.png" alt="" />
+              <img src="../../assets/icons/facebook.png" alt="" />
+              <img src="../../assets/icons/Twitter.png" alt="" />
+            </div>
+            <div class="itens-right">
+              © 2022 GAIA. Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
+

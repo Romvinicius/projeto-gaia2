@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../globais.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="../../js/funcoes.js"></script>
+
+  <title>Dashboard</title>
+</head>
+
+<body onload="validarSessao(), atualizarFeedDash()">
+  <div class="container">
+    <div class="side-menu">
+      <div>
+
+        <div class="brand-name">
+          <a href="../../index.html">
+            <img src="../../assets/icons/gaia_logo.png" width="80px">
+          </a>
+        </div>
+        <div class="section-user">
+          <div class="user-container">
+            <div>
+              <img src="../../assets/icons/agricultor.png" alt="" />
+            </div>
+            <div class="welcome">Bem-vindo(a) <b id="name_user">Agricultor</b></div>
+          </div>
+        </div>
+        <ul>
+          <li><a href=" ./dashboard.html" class="atual"><svg width="75" viewBox="0 0 75 75" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M66.6667 0H8.33333C3.75 0 0 3.75 0 8.33333V66.6667C0 71.25 3.75 75 8.33333 75H66.6667C71.25 75 75 71.25 75 66.6667V8.33333C75 3.75 71.25 0 66.6667 0ZM8.33333 66.6667V8.33333H33.3333V66.6667H8.33333ZM66.6667 66.6667H41.6667V37.5H66.6667V66.6667ZM66.6667 29.1667H41.6667V8.33333H66.6667V29.1667Z"
+                  fill="#f7f7f7" />
+              </svg>
+              Dashboard</a></li>
+          <li><a href="grafico/grafico.html"><svg width="88" viewBox="0 0 88 88" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.75 62.5H6.25V81.25H18.75V62.5ZM50 37.5H37.5V81.25H50V37.5ZM81.25 6.25V81.25H68.75V6.25H81.25ZM68.75 0C67.0924 0 65.5027 0.65848 64.3306 1.83058C63.1585 3.00268 62.5 4.5924 62.5 6.25V81.25C62.5 82.9076 63.1585 84.4973 64.3306 85.6694C65.5027 86.8415 67.0924 87.5 68.75 87.5H81.25C82.9076 87.5 84.4973 86.8415 85.6694 85.6694C86.8415 84.4973 87.5 82.9076 87.5 81.25V6.25C87.5 4.5924 86.8415 3.00268 85.6694 1.83058C84.4973 0.65848 82.9076 0 81.25 0H68.75ZM31.25 37.5C31.25 35.8424 31.9085 34.2527 33.0806 33.0806C34.2527 31.9085 35.8424 31.25 37.5 31.25H50C51.6576 31.25 53.2473 31.9085 54.4194 33.0806C55.5915 34.2527 56.25 35.8424 56.25 37.5V81.25C56.25 82.9076 55.5915 84.4973 54.4194 85.6694C53.2473 86.8415 51.6576 87.5 50 87.5H37.5C35.8424 87.5 34.2527 86.8415 33.0806 85.6694C31.9085 84.4973 31.25 82.9076 31.25 81.25V37.5ZM0 62.5C0 60.8424 0.65848 59.2527 1.83058 58.0806C3.00268 56.9085 4.5924 56.25 6.25 56.25H18.75C20.4076 56.25 21.9973 56.9085 23.1694 58.0806C24.3415 59.2527 25 60.8424 25 62.5V81.25C25 82.9076 24.3415 84.4973 23.1694 85.6694C21.9973 86.8415 20.4076 87.5 18.75 87.5H6.25C4.5924 87.5 3.00268 86.8415 1.83058 85.6694C0.65848 84.4973 0 82.9076 0 81.25V62.5Z"
+                  fill="#f7f7f7" />
+              </svg>
+              Graficos</a></li>
+          <li><a href="suporte/suporte.html"><svg width="88" viewBox="0 0 19 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 22.59V18.99C3.99 18.73 0 14.57 0 9.5C0 4.26 4.26 0 9.5 0C14.74 0 19 4.26 19 9.5C19 14.45 15.56 19.43 10.43 21.9L9 22.59ZM9.5 2C5.36 2 2 5.36 2 9.5C2 13.64 5.36 17 9.5 17H11V19.3C14.64 17 17 13.22 17 9.5C17 5.36 13.64 2 9.5 2ZM8.5 13.5H10.5V15.5H8.5V13.5ZM10.5 12H8.5C8.5 8.75 11.5 9 11.5 7C11.5 5.9 10.6 5 9.5 5C8.4 5 7.5 5.9 7.5 7H5.5C5.5 4.79 7.29 3 9.5 3C11.71 3 13.5 4.79 13.5 7C13.5 9.5 10.5 9.75 10.5 12Z"
+                  fill="#f7f7f7" />
+              </svg>
+
+              Suporte</a></li>
+
+          <li class="proprietario"><a href="./registro/registro.html"><svg width="88" viewBox="0 0 19 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 22.59V18.99C3.99 18.73 0 14.57 0 9.5C0 4.26 4.26 0 9.5 0C14.74 0 19 4.26 19 9.5C19 14.45 15.56 19.43 10.43 21.9L9 22.59ZM9.5 2C5.36 2 2 5.36 2 9.5C2 13.64 5.36 17 9.5 17H11V19.3C14.64 17 17 13.22 17 9.5C17 5.36 13.64 2 9.5 2ZM8.5 13.5H10.5V15.5H8.5V13.5ZM10.5 12H8.5C8.5 8.75 11.5 9 11.5 7C11.5 5.9 10.6 5 9.5 5C8.4 5 7.5 5.9 7.5 7H5.5C5.5 4.79 7.29 3 9.5 3C11.71 3 13.5 4.79 13.5 7C13.5 9.5 10.5 9.75 10.5 12Z"
+                  fill="#f7f7f7" />
+              </svg>
+
+              Registro de funcionário</a></li>
+
+        </ul>
+      </div>
+      <div class="side-menu-footer" onclick="limparSessao()">
+        <a><svg width="84" viewBox="0 0 84 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M62.5 16.6667L56.625 22.5417L67.375 33.3333H25V41.6667H67.375L56.625 52.4167L62.5 58.3333L83.3333 37.5L62.5 16.6667ZM8.33333 8.33333H41.6667V0H8.33333C3.75 0 0 3.75 0 8.33333V66.6667C0 71.25 3.75 75 8.33333 75H41.6667V66.6667H8.33333V8.33333Z"
+              fill="#f7f7f7" />
+          </svg>
+          Sair</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header-container">
+        <div class="header">
+          <h2>Dashboard.</h2>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="wrapper">
+          <div class="section-cards">
+            <div class="card card-perigo">
+
+              <!-- <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M45.8333 0C20.5208 0 0 20.5208 0 45.8333C0 71.1458 20.5208 91.6667 45.8333 91.6667C71.1458 91.6667 91.6667 71.1458 91.6667 45.8333C91.6667 20.5208 71.1458 0 45.8333 0ZM50 25C50 23.8949 49.561 22.8351 48.7796 22.0537C47.9982 21.2723 46.9384 20.8333 45.8333 20.8333C44.7283 20.8333 43.6685 21.2723 42.8871 22.0537C42.1057 22.8351 41.6667 23.8949 41.6667 25V50C41.6667 51.1051 42.1057 52.1649 42.8871 52.9463C43.6685 53.7277 44.7283 54.1667 45.8333 54.1667C46.9384 54.1667 47.9982 53.7277 48.7796 52.9463C49.561 52.1649 50 51.1051 50 50V25ZM50 64.5833C50 63.4783 49.561 62.4185 48.7796 61.6371C47.9982 60.8557 46.9384 60.4167 45.8333 60.4167C44.7283 60.4167 43.6685 60.8557 42.8871 61.6371C42.1057 62.4185 41.6667 63.4783 41.6667 64.5833V66.6667C41.6667 67.7717 42.1057 68.8315 42.8871 69.6129C43.6685 70.3943 44.7283 70.8333 45.8333 70.8333C46.9384 70.8333 47.9982 70.3943 48.7796 69.6129C49.561 68.8315 50 67.7717 50 66.6667V64.5833Z"
+                  fill="red" />
+              </svg> -->
+              <div>
+                <h2>Perigo <br> Frio</h2>
+                <p>15°C</p>
+              </div>
+
+            </div>
+            <div class="card card-alerta">
+
+              <!-- <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M56.4049 6.66607C55.4462 4.66954 53.9429 2.98451 52.0683 1.80513C50.1936 0.625742 48.0239 0 45.8091 0C43.5943 0 41.4246 0.625742 39.5499 1.80513C37.6753 2.98451 36.172 4.66954 35.2133 6.66607L1.3966 73.1869C-2.64924 81.1286 2.46326 91.6744 11.9883 91.6744H79.6258C89.1549 91.6744 94.2591 81.1327 90.2216 73.1869L56.4049 6.66607ZM45.8091 29.1744C46.9142 29.1744 47.974 29.6134 48.7554 30.3948C49.5368 31.1762 49.9758 32.236 49.9758 33.3411V54.1744C49.9758 55.2795 49.5368 56.3393 48.7554 57.1207C47.974 57.9021 46.9142 58.3411 45.8091 58.3411C44.704 58.3411 43.6442 57.9021 42.8628 57.1207C42.0814 56.3393 41.6424 55.2795 41.6424 54.1744V33.3411C41.6424 32.236 42.0814 31.1762 42.8628 30.3948C43.6442 29.6134 44.704 29.1744 45.8091 29.1744ZM45.8091 64.5911C46.9142 64.5911 47.974 65.03 48.7554 65.8114C49.5368 66.5928 49.9758 67.6527 49.9758 68.7577V70.8411C49.9758 71.9461 49.5368 73.0059 48.7554 73.7873C47.974 74.5687 46.9142 75.0077 45.8091 75.0077C44.704 75.0077 43.6442 74.5687 42.8628 73.7873C42.0814 73.0059 41.6424 71.9461 41.6424 70.8411V68.7577C41.6424 67.6527 42.0814 66.5928 42.8628 65.8114C43.6442 65.03 44.704 64.5911 45.8091 64.5911Z"
+                  fill="yellow" />
+              </svg> -->
+              <div>
+
+                <h2>Alerta <br> Frio</h2>
+                <p>17°C</p>
+              </div>
+
+            </div>
+            <div class="card card-ideal">
+              
+              <div>
+
+                <h2>Ideal</h2>
+                <p>20°C</p>
+              </div>
+            </div>
+            <div class="card card-alerta">
+
+             
+              <div>
+
+                <h2>Alerta Quente</h2>
+                <p>25°C</p>
+              </div>
+
+            </div>
+
+            <div class="card card-perigo">
+
+              <div>
+                <h2>Perigo Quente</h2>
+                <p>30°C</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="section-plantacao">
+          <div class="wrapper">
+            <div class="container-setor">
+              <div class="plant">
+                <div class="selecione_plant">
+                  <span>Selecione a Plantação:&nbsp;&nbsp;</span>
+                    <select id="temp" onchange="atualizarSetorTemp(), exibirFuncionarios()">
+                      <option value="0">ESCOLHA</option>
+                    </select>
+                    <br>
+                  <span>Temperatura da Plantação</span>
+                </div>             
+              </div>
+              <div id="card_temp" class="container-setor">
+
+              </div>
+            </div>
+            <div class="container-setor">
+              <div class="plant">
+                <span>Umidade da Plantação:&nbsp;&nbsp;</span>
+              </div>
+              <div id="card_umi" class="container-setor">     
+              </div>
+            </div>
+            <div class="container-setor">
+              <div class="plant">
+                <span>Lista de Funcionários:&nbsp;&nbsp;</span>              
+              </div>
+              <div id="card_func" class="container-setor">
+                <table id="table_func">
+                  <tr class="tr_title">
+                    <td>Nome</td>
+                    <td>Cargo</td>
+                    <td>Modificar</td>
+                    <td>Deletar</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../../assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../globais.css" />
+    <title>GAIA - Cadastro</title>
+  </head>
+
+  <body>
+    <header id="header" class="nav-second">
+      <div class="wrapper">
+        <div class="container-header">
+          <a href="../../index.html"
+            ><img class="logo" src="../../assets/icons/gaia_logo.png" alt=""
+          /></a>
+          <ul class="nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sobre/about.html">Sobre</a></li>
+            <li>
+              <a href="../calculadora/calculadora.htmlvalues">Simulador</a>
+            </li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+          </ul>
+          <div class="box-a">
+            <a class="btn btn-green" href="../login/login.html">Entrar</a>
+            <a class="btn btn-light" href="../cadastro/cadastro.html"
+              >Cadastre-se</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="form-main">
+      <div class="container">
+        <div class="image-formulario">
+          <img src="../../assets/imgs/img-form-loginouregister.png" alt="" />
+        </div>
+        <div class="main-formulario-cadastro">
+          <div class="textos">
+            <h1>GAIA - Cadastro</h1>
+            <p>Insira seus dados.</p>
+          </div>
+          <div>
+            <div class="campos-conjunto-1">
+              <div class="campos-total">
+                <span>Nome:</span>
+                <input
+                  id="input_nome"
+                  placeholder="Insira o seu nome completo"
+                />
+              </div>
+              <div class="campos-total">
+                <span>E-mail:</span>
+                <input id="input_email" onblur="validarEmail()" />
+                <span id="span_error_email"></span>
+              </div>
+            </div>
+
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span>Telefone fixo:</span>
+                <input id="input_telFixo" />
+              </div>
+              <div class="campos-metade">
+                <span>Celular:</span>
+                <input id="input_celular" />
+              </div>
+            </div>
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span>CPF:</span>
+                <input id="input_cpf"  />
+              </div>
+              <div class="campos-metade" id="cep_campo">
+                <span>CEP:</span>
+                <input id="input_cep" onblur="pesquisacep(this.value);" />
+                <span id="span_error_cep"></span>
+              </div>
+            </div>
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span>Estado:</span>
+                <input id="input_uf" disabled />
+              </div>
+              <div class="campos-metade">
+                <span>Cidade:</span>
+                <input id="input_cidade" disabled />
+              </div>
+            </div>
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span>Bairro:</span>
+                <input id="input_bairro" disabled />
+              </div>
+              <div class="campos-metade">
+                <span>Logradouro:</span>
+                <input id="input_rua" disabled />
+              </div>
+            </div>
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span>Número:</span>
+                <input id="input_numero" />
+              </div>
+              <div class="campos-metade">
+                <span>Complemento:</span>
+                <input id="input_complemento" />
+              </div>
+            </div>
+            <div class="campos-conjunto-2">
+              <div class="campos-metade">
+                <span id="span_senha">Senha:</span>
+                <input id="input_senha" onblur="validarSenha()" />
+                <span id="span_error_senha"></span>
+              </div>
+              <div class="campos-metade">
+                <span id="span_confirmarSenha">Confirmar Senha:</span>
+                <input id="input_confirmarSenha" onblur="validarSenha()" />
+                <span id="span_error_confirmarSenha"></span>
+              </div>
+            </div>
+            <div class="button_form">
+              <button id="btnCadastro" class="btn-green form" onclick="cadastrar()">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-main">
+      <div class="wrapper">
+        <div class="container-footer">
+          <div class="content-main">
+            <div class="itens-left">
+              <h1>Meios de Contato</h1>
+              <p>+55 (11)94002-8922</p>
+              <p>projetogaiaoficial@gmail.com</p>
+            </div>
+            <div class="itens-main">
+              <h1>Links</h1>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../sobre/about.html">Sobre</a></li>
+                <li><a href="../calculadora/calculadora.html">Simulador</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="itens-right">
+              <h1>Endereço</h1>
+              <p>
+                Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP,
+                01414-001
+              </p>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="itens-left">
+              <img src="../../assets/icons/Linkedin.png" alt="" />
+              <img src="../../assets/icons/facebook.png" alt="" />
+              <img src="../../assets/icons/Twitter.png" alt="" />
+            </div>
+            <div class="itens-right">
+              © 2022 GAIA. Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="cadastro.js"></script>
+  </body>
+</html>

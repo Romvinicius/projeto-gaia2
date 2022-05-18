@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../../assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="//code.jivosite.com/widget/Rb50co3NOV" async></script>
+    <link rel="stylesheet" href="../../globais.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GAIA - Calculadora</title>
+  </head>
+  <body>
+    <header id="header" class="nav-second">
+      <div class="wrapper">
+        <div class="container-header">
+          <a href="../../index.html"
+            ><img class="logo" src="../../assets/icons/gaia_logo.png" alt=""
+          /></a>
+          <ul class="nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sobre/about.html">Sobre</a></li>
+            <li><a href="calculadora.html">Simulador</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+          </ul>
+          <div class="box-a">
+            <a class="btn btn-green" href="../login/login.html">Entrar</a>
+            <a class="btn btn-light" href="../cadastro/cadastro.html"
+              >Cadastre-se</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="content">
+          <div class="form-container">
+            <div>
+              <label for="">Colheita de quilogramas(kg) por mês</label>
+              <input
+                type="text"
+                id="input_qtd_kq_tomate_mes"
+                placeholder="Quantidade de quilogramas por mes"
+              />
+            </div>
+
+            <div>
+              <label for="">Valor da venda</label>
+              <input
+                id="input_valor_venda_tomate_kg"
+                type="text"
+                placeholder="Valor da venda por quilograma"
+              />
+            </div>
+
+            <button class="btn btn-green" onclick="simular()">Simular</button>
+          </div>
+        </div>
+      </div>
+
+      <section id="resultado_simulador" style="display: none">
+        <div class="ganho-conosco">
+          <p>Quanto você ganha com a gente</p>
+          <h2 id="valor_ganho_conosco"></h2>
+        </div>
+        <div class="valores">
+          <div class="valorBruto">
+            <p>Seu valor bruto: 100%</p>
+            <h3 id="valor_bruto_html"></h3>
+          </div>
+          <div class="perdas">
+            <p>Você pode perder até: 30%</p>
+            <h3 id="valor_perda_html"></h3>
+          </div>
+          <div class="valorLiquidoPerda">
+            <p>Valor liquido da sua possível perda: 70%</p>
+            <h3 id="valor_liquido_perda_html"></h3>
+          </div>
+          <br />
+          <div class="ganhos">
+            <p>Recuperamos até da sua perda: 20%</p>
+            <h3 id="valor_ganho_html"></h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <div class="wrapper">
+        <div class="container-footer">
+          <div class="content-main">
+            <div class="itens-left">
+              <h1>Meios de Contato</h1>
+              <p>+55 (11)94002-8922</p>
+              <p>projetogaiaoficial@gmail.com</p>
+            </div>
+            <div class="itens-main">
+              <h1>Links</h1>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../sobre/about.html">Sobre</a></li>
+                <li><a href="./calculadora.html">Simulador</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="itens-right">
+              <h1>Endereço</h1>
+              <p>
+                Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP,
+                01414-001
+              </p>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="itens-left">
+              <img src="../../assets/icons/Linkedin.png" alt="" />
+              <img src="../../assets/icons/facebook.png" alt="" />
+              <img src="../../assets/icons/Twitter.png" alt="" />
+            </div>
+            <div class="itens-right">
+              © 2022 GAIA. Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="script.js"></script>

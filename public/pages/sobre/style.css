@@ -1,0 +1,128 @@
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.sobre {
+    height: 90vh;
+}
+
+.sobre .container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .texto{
+    width: 40vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre .logo{
+    width: 30vw;
+    height: 70%;
+    background-color: #002b2b;
+    border-radius: 10px;
+}
+
+.sobre .texto p{
+    font-size: 1.8vw;
+    color: #646464;
+    align-self: center;
+}
+
+.sobre .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    font-size: 3vw;
+    color: #002b2b;
+}
+
+.explic{
+    height: 100vh;
+}
+
+.explic .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.explic .container .card{
+    width: 90%;
+    height: 60%;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee9c7;
+    padding: 0 5% 0 33%;
+    border-radius: 10px;
+}
+
+.explic .container .foto{
+    position: absolute;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 40vh;
+    height: 70vh;
+    background-image: url(../../assets/imgs/Rectangle\ 13.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.reverse{
+    flex-flow: row-reverse;
+}
+
+#reverse{
+    padding: 0 33% 0 5%;
+}
+
+.card p{
+    width: 100%;
+    font-size: 1.2vw;
+    color: #0F0F0F;
+    line-height: 2vw;
+}
+
+.equipe .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.equipe .card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.equipe .card .func {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 25%;
+    color: #E3b062;
+    font-size: 20px;
+    text-align: center;
+}
+
+.func img{
+    height: 60%;
+    border-radius: 50%;
+}

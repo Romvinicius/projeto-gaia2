@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../globais.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../../js/funcoes.js"></script>
+    <title>Grafico</title>
+  </head>
+  <body onload="validarSessao()">
+    <div class="container">
+      <div class="wrapper">
+        <div class="welcome">
+          <div>
+            Ola, <b id="name_user">Agricultor</b>
+            <p>Bem-vindo(a) a sua sessão de gráficos</p>
+          </div>
+          <div class="return-dashboard">
+            <a href="../dashboard.html">Voltar para o Dashboard</a>
+          </div>
+        </div>
+        <!-- <div class="container-statistics">
+          <div class="component-data">
+            <div class="data">
+              <span>Valor bruto</span>
+              <p>R$ 100000</p>
+            </div>
+          </div>
+          <div class="component-data">
+            <div class="data">
+              <span>Valor liquido</span>
+              <p>R$ 50000</p>
+            </div>
+          </div>
+          <div class="component-data">
+            <div class="data">
+              <span>Ganhos conosco</span>
+              <p>R$ 80000</p>
+            </div>
+          </div>
+        </div> -->
+        <select id="listSetors" onmouseup="selectSetor()">
+          <option value="setor1">Setor 1</option>
+          <option value="setor2">Setor 2</option>
+          <option value="setor3">Setor 3</option>
+          <option value="setor4">Setor 4</option>
+        </select>
+        <div class="charts-container">
+          <div class="chart chart-line">
+            <div>
+              <canvas id="chartLine"></canvas>
+            </div>
+          </div>
+          <!-- <div class="chart chart-pizza">
+            <div>
+              <canvas id="chartPizza"></canvas>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="../../../js/grafico/script.js"></script>
+  </body>
+</html>

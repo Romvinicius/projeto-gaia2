@@ -1,0 +1,78 @@
+.container_contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 500px;
+  padding: 30px 0px;
+  height: 90vh;
+}
+
+.titulo_contato {
+  color: #002b2b;
+  width: 100%;
+  text-align: center;
+}
+
+.bloco_contato {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  width: 40%;
+  height: 90%;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #002b2b;
+}
+
+.bloco_formulario {
+  width: 60%;
+  height: 90%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.bloco_formulario .div_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.div_input input {
+  border: none;
+  border-bottom: 2px solid #002b2b;
+  padding: 3px;
+  font-size: 18px;
+  outline: none;
+}
+
+.div_input select {
+  border: none;
+  border-bottom: 2px solid #002b2b;
+  padding: 3px;
+  font-size: 18px;
+  outline: none;
+}
+.div_buttom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.div_input #text_area {
+  outline: none;
+  height: 125px;
+}
+
+.bloco_contato .meio_contato {
+  display: flex;
+  padding: 10px;
+  color: #f3f3f3;
+  align-items: flex-start;
+}
+
+.meio_contato img {
+  width: 30px;
+  height: 30px;
+}
+.meio_contato span {
+  margin-left: 10px;
+}

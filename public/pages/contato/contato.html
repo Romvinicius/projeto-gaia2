@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../globais.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header id="header" class="nav-second">
+      <div class="wrapper">
+        <div class="container-header">
+          <a href="../../index.html"
+            ><img class="logo" src="../../assets/icons/gaia_logo.png" alt=""
+          /></a>
+          <ul class="nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sobre/about.html">Sobre</a></li>
+            <li><a href="../calculadora/calculadora.html">Simulador</a></li>
+            <li><a href="../contato/contato.html">Contato</a></li>
+          </ul>
+          <div class="box-a">
+            <a class="btn btn-green" href="../login/login.html">Entrar</a>
+            <a class="btn btn-light" href="../cadastro/cadastro.html"
+              >Cadastre-se</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contato">
+      <div class="wrapper">
+        <div class="container_contato">
+          <h1 class="titulo_contato">Contato</h1>
+
+          <div class="bloco_contato">
+            <div class="meio_contato">
+              <img src="../../assets/icons/Localizacao.png" alt="" />
+              <span>
+                Endereço: Rua Haddock Lobo, 595 - Cerqueira César, São Paulo -
+                SP, 01414-001
+              </span>
+            </div>
+
+            <div class="meio_contato">
+              <img src="../../assets/icons/Email.png" alt="" />
+              <span> projetogaiaoficial@gmail.com </span>
+            </div>
+
+            <div class="meio_contato">
+              <img src="../../assets/icons/Telefone.png" alt="" />
+              <span> +55 (11) 94002-8922 </span>
+            </div>
+          </div>
+
+          <form
+            class="bloco_formulario"
+            action="https://formsubmit.co/projetogaiaoficial@gmail.com"
+            method="POST"
+            target="_blank"
+          >
+            <div class="div_input">
+              <span>Assunto:</span>
+              <select id="select_assunto" name="assunto" required>
+                <option value="duvida">Dúvida</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="div_input">
+              <span>Nome:</span>
+              <input type="text" name="nome" required />
+            </div>
+            <div class="div_input">
+              <span>Email:</span>
+              <input type="email" name="email" required />
+            </div>
+            <div class="div_input">
+              <span>Mensagens:</span>
+              <textarea
+                name="message"
+                id="text_area"
+                cols="10"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="div_buttom">
+              <button type="submit" class="btn btn-green">
+                Enviar Mensagem
+              </button>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://gabrieldasilvadev.github.io/projeto-gaia/pages/obrigado/obrigado.html"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-main">
+      <div class="wrapper">
+        <div class="container-footer">
+          <div class="content-main">
+            <div class="itens-left">
+              <h1>Meios de Contato</h1>
+              <p>+55 (11)94002-8922</p>
+              <p>projetogaiaoficial@gmail.com</p>
+            </div>
+            <div class="itens-main">
+              <h1>Links</h1>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../sobre/about.html">Sobre</a></li>
+                <li><a href="../calculadora/calculadora.html">Simulador</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="itens-right">
+              <h1>Endereço</h1>
+              <p>
+                Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP,
+                01414-001
+              </p>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="itens-left">
+              <img src="../../assets/icons/Linkedin.png" alt="" />
+              <img src="../../assets/icons/facebook.png" alt="" />
+              <img src="../../assets/icons/Twitter.png" alt="" />
+            </div>
+            <div class="itens-right">
+              © 2022 GAIA. Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

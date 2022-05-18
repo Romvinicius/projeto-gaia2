@@ -1,0 +1,107 @@
+body {
+    background-color: #fbfbfd;
+    height: 110vh;
+  }
+  
+  .welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+  }
+  
+  .welcome .return-dashboard a {
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #002b2b;
+    color: white;
+  }
+  
+  .welcome .return-dashboard a:hover {
+    opacity: 0.9;
+  }
+
+  .form-main .container{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+
+ 
+ .main-formulario-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    gap: 10px;
+ }
+ 
+ .textos{
+    padding: 35px;
+    margin-left: 3%;
+    font-size: 20px;
+ }
+ 
+ .textos h1,p{
+    color: #002B2B;
+ }
+ 
+ .campos-conjunto-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+ }
+ 
+ .campos-conjunto-1 .campos-total{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+ }
+ 
+ .campos-total input{
+    border: none;
+    border-bottom: 2px solid #002B2B;
+    padding: 3px;
+    font-size: 18px;
+    outline: none;
+ }
+ 
+ .campos-conjunto-2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+ }
+ 
+ .campos-conjunto-2 .campos-metade{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+ }
+ 
+ .campos-metade input,select{
+    border: none;
+    border-bottom: 2px solid #002B2B;
+    padding: 3px;
+    font-size: 18px;
+    outline: none;
+ }
+ 
+ .button_form{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .btn-green.form{
+    align-self: center;
+    width: 50%;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+ }

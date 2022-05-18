@@ -1,0 +1,39 @@
+
+
+body {
+    background-color: #dcdcdc;
+
+}
+
+.contrainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.box{
+    height: 90vh;
+    color: #0f0f0f;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+ 
+
+.gaia{
+    color:  #002B2B;
+   
+
+}
+.obrigado{
+    text-align: center;
+    color:  #002B2B;
+    font-size: 150px;
+    padding: 100px;
+    
+
+}

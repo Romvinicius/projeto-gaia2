@@ -1,0 +1,95 @@
+
+.container-formulario{
+    background-color: var(--white);
+   
+}
+
+.wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+   
+}
+.card-formulario{
+    height:50% ;
+    width: 50%;
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    color: white;
+    
+}
+.titulo-login{
+   font-size: 18px;
+   width: 100%;
+   margin-bottom: 30px;
+
+
+}
+.titulo-login h1 , p {
+    color: #002B2B;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: black;
+    height: 250px;
+    gap:25px;
+    
+}
+.input_box{
+    display: flex;
+    flex-direction: column;
+
+}
+.input_box input{
+border: none;
+   border-bottom: 2px solid #002B2B;
+   padding: 3px;
+   font-size: 18px;
+    outline:none;
+}
+
+.direita{
+width: 45%;
+height: 500px;
+display: flex;
+flex-direction: column;
+}
+
+.direita .form-img{
+    width: 100%;
+    height: 450px;
+    background-image: url(../../assets/imgs/img-form-loginouregister.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.direita .area_funcionario{
+    display: flex;
+    justify-content: center;
+}
+
+#span_email{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+#crie_conta{
+    color: #002B2B;
+}
+
+.wrapper .container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 40px 0px;
+   
+}
